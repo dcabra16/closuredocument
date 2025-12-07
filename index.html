@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Documents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card-bg: #ffffff;
+      --accent: #c0392b;
+      --accent-dark: #922b21;
+      --text: #333333;
+      --muted: #777777;
+      --border: #dddddd;
+      --radius: 12px;
+      --shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.75rem 2rem;
+    }
+
+    .doc-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .doc-kicker {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .doc-title {
+      font-size: 1.3rem;
+      font-weight: 650;
+      margin: 0 0 0.25rem;
+    }
+
+    .doc-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ---------- SECTION TITLE ---------- */
+    .section-heading {
+      margin-top: 0.5rem;
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    .section-heading .num {
+      color: var(--accent-dark);
+      font-weight: 700;
+      margin-right: 0.25rem;
+    }
+
+    .section-hint {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    /* ---------- DOCUMENTS TABLE ---------- */
+    .documents-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      table-layout: fixed;
+      font-size: 0.9rem;
+    }
+
+    .documents-table thead th {
+      background: var(--accent);
+      color: #ffffff;
+      padding: 0.55rem 0.5rem;
+      text-align: left;
+      font-weight: 600;
+      border-right: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .documents-table thead th:last-child {
+      border-right: none;
+    }
+
+    .documents-table tbody td {
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      padding: 0.4rem 0.5rem;
+      vertical-align: top;
+      background: #ffffff;
+    }
+
+    .documents-table tbody td:last-child {
+      border-right: none;
+    }
+
+    .documents-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Make cells feel like form fields */
+    .doc-cell {
+      min-height: 2.2rem;
+      padding: 0.25rem 0.3rem;
+      border-radius: 4px;
+      outline: none;
+      border: 1px dashed transparent;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .doc-cell[contenteditable="true"]:hover {
+      border-color: #e0e0e0;
+      background: #fafafa;
+      cursor: text;
+    }
+
+    .doc-cell[contenteditable="true"]:focus {
+      border-color: var(--accent-dark);
+      background: #fff8f7;
+    }
+
+    .documents-footer-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+    }
+
+    /* column widths */
+    .col-name    { width: 26%; }
+    .col-type    { width: 18%; }
+    .col-location{ width: 26%; }
+    .col-notes   { width: 30%; }
+
+    @media (max-width: 720px) {
+      .documents-table {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <header class="doc-header">
+        <div class="doc-kicker">Project Closure – Documents</div>
+        <h1 class="doc-title">Project Documents</h1>
+        <p class="doc-subtitle">
+          List the key documents produced during this project and where they are stored.
+        </p>
+      </header>
+
+      <section id="documents">
+        <h2 class="section-heading">
+          <span class="num">5.</span> Documents
+        </h2>
+        <p class="section-hint">
+          Include links or locations so someone else can easily find and reuse these.
+        </p>
+
+        <table class="documents-table">
+          <thead>
+            <tr>
+              <th class="col-name">Document Name</th>
+              <th class="col-type">Type</th>
+              <th class="col-location">Location / Link</th>
+              <th class="col-notes">Owner / Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Project Charter
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Planning
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Google Drive &gt; Managing IT Projects &gt; Project Charter
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Final version approved by instructor.
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Status Reports
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Tracking
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Shared folder in Google Drive
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Weekly updates on schedule, risks, and changes.
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Lessons Learned Summary
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Closure / Learning
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Class LMS &gt; Final Deliverables
+                </div>
+              </td>
+              <td>
+                <div class="doc-cell" contenteditable="true">
+Captures key takeaways and recommendations.
+                </div>
+              </td>
+            </tr>
+
+            <!-- Blank rows for more docs -->
+            <tr>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+            </tr>
+            <tr>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+              <td><div class="doc-cell" contenteditable="true"></div></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="documents-footer-note">
+          Tip: if you’re publishing this online, you can turn the locations into clickable links.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
