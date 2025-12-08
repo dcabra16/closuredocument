@@ -11,7 +11,7 @@
             padding: 20px;
             background: linear-gradient(135deg, #f5f1eb 0%, #e8ddd4 100%);
             min-height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
         }
 
         .container {
@@ -26,580 +26,238 @@
         .header {
             background: linear-gradient(135deg, #c0392b, #e74c3c);
             color: white;
-            padding: 30px 40px;
-            text-align: left;
-            position: relative;
-        }
-
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 8px;
-            padding: 8px 14px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .back-button:hover {
-            background: rgba(255,255,255,0.3);
-            border-color: rgba(255,255,255,0.5);
-            transform: translateY(-2px);
+            padding: 35px;
         }
 
         .header h1 {
-            margin: 10px 0 8px 0;
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .header p {
-            margin: 0;
-            font-size: 16px;
-            opacity: 0.95;
+            margin: 0 0 8px 0;
         }
 
         .content {
-            padding: 30px 40px 40px;
+            padding: 40px;
         }
 
-        .lessons-form {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            margin-bottom: 30px;
-        }
-
-        .lessons-form h3 {
+        h2.section-title {
             color: #c0392b;
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-
-        .form-section {
-            margin-bottom: 30px;
-        }
-
-        .form-section h4 {
-            color: #555;
             margin-bottom: 15px;
-            font-size: 18px;
+            margin-top: 40px;
+            font-size: 26px;
         }
 
-        .form-section label {
-            display: block;
-            color: #666;
+        h3 {
+            color: #555;
+            margin-bottom: 10px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        p.placeholder {
+            background: #fff7f7;
+            padding: 14px 18px;
+            border-left: 4px solid #c0392b;
+            border-radius: 8px;
+            color: #555;
+            min-height: 60px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        th {
+            background: #c0392b;
+            color: white;
+            padding: 10px;
+            text-align: left;
             font-weight: 600;
-            margin-bottom: 8px;
-            font-size: 15px;
+            border: 1px solid #ddd;
         }
 
-        .form-section textarea {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 15px;
-            line-height: 1.6;
-            resize: vertical;
-            transition: border-color 0.3s ease;
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            color: #555;
+            min-height: 40px;
         }
 
-        .form-section textarea:focus {
-            outline: none;
-            border-color: #c0392b;
-        }
-
-        .form-section input[type="text"] {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 15px;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-section input[type="text"]:focus {
-            outline: none;
-            border-color: #c0392b;
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                padding: 25px 20px 20px;
-            }
-            .content {
-                padding: 20px;
-            }
-            .back-button {
-                position: static;
-                margin-bottom: 10px;
-            }
+        tr:nth-child(even) {
+            background: #f8f9fa;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <header class="header">
-            <a href="index.html" class="back-button">
-                <span aria-hidden="true">←</span>
-                Back to Course
-            </a>
-            <h1>📄 Project Closure Document</h1>
-            <p>Summarize your project outcomes, learning, and next steps.</p>
-        </header>
+<div class="container">
 
-        <main class="content">
-            <div class="lessons-form">
-                <h3>Comprehensive Project Closure Document</h3>
-
-                <!-- 1. Project Information -->
-                <div class="form-section">
-                    <h4>1. Project Information</h4>
-                    <label>Project Title:</label>
-                    <input type="text" placeholder="e.g., Get an Entry-Level Job in Data Analytics">
-
-                    <br><br>
-                    <label>Project Manager:</label>
-                    <input type="text" placeholder="Your name">
-
-                    <br><br>
-                    <label>Project Description:</label>
-                    <textarea rows="4" placeholder="Brief overview of your semester project - what problem does it solve, who are the users, and what are the main features or deliverables?"></textarea>
-
-                    <br><br>
-                    <label>Project Closure Type:</label>
-                    <select style="width: 100%; padding: 12px 15px; border: 2px solid #e9ecef; border-radius: 8px; font-family: inherit; font-size: 15px; transition: border-color 0.3s ease;">
-                        <option value="">Select closure type...</option>
-                        <option value="normal">✅ Normal Closure - Project completed successfully</option>
-                        <option value="premature">⚠️ Premature Closure - Ended early, core objectives met</option>
-                        <option value="perpetual">🔄 Perpetual Closure - No official end, ongoing</option>
-                        <option value="failed">❌ Failed / Unsuccessful Closure - Terminated due to issues</option>
-                        <option value="changed">🔀 Changed Priority Closure - Stopped due to strategy shift</option>
-                    </select>
-
-                    <br><br>
-                    <label>Closing Summary:</label>
-                    <textarea rows="4" placeholder="Executive summary of overall project performance - Did you meet your goals? What were the key successes and challenges? How would you rate the project's overall success?"></textarea>
-                </div>
-
-                <!-- 2. Deliverables Summary -->
-                <div class="form-section">
-                    <h4>2. Deliverables Summary</h4>
-                    <p style="color: #666; margin-bottom: 15px;">
-                        List all major deliverables and track their completion status.
-                    </p>
-
-                    <div style="overflow-x: auto; margin-top: 20px;">
-                        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                            <thead style="background: #c0392b; color: white;">
-                                <tr>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 40%;">Deliverable Name</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 30%;">Original Definition of Done</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 20%;">Actual Progress</th>
-                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd; width: 10%;">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="e.g., Project Charter, User Research Report">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="e.g., Complete charter with all sections, 10+ user interviews">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="e.g., Charter completed, 12 interviews conducted">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
-                                        <select style="width: 100%; border: none; font-size: 14px; padding: 5px; background: white;">
-                                            <option value="">-</option>
-                                            <option value="green">🟢 Green</option>
-                                            <option value="yellow">🟡 Yellow</option>
-                                            <option value="red">🔴 Red</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr style="background: #f8f9fa;">
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Deliverable 2">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Original criteria">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="What was delivered">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
-                                        <select style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;">
-                                            <option value="">-</option>
-                                            <option value="green">🟢 Green</option>
-                                            <option value="yellow">🟡 Yellow</option>
-                                            <option value="red">🔴 Red</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Deliverable 3">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Original criteria">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="What was delivered">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
-                                        <select style="width: 100%; border: none; font-size: 14px; padding: 5px; background: white;">
-                                            <option value="">-</option>
-                                            <option value="green">🟢 Green</option>
-                                            <option value="yellow">🟡 Yellow</option>
-                                            <option value="red">🔴 Red</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr style="background: #f8f9fa;">
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Deliverable 4">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Original criteria">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="What was delivered">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
-                                        <select style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;">
-                                            <option value="">-</option>
-                                            <option value="green">🟢 Green</option>
-                                            <option value="yellow">🟡 Yellow</option>
-                                            <option value="red">🔴 Red</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Deliverable 5">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Original criteria">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="What was delivered">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
-                                        <select style="width: 100%; border: none; font-size: 14px; padding: 5px; background: white;">
-                                            <option value="">-</option>
-                                            <option value="green">🟢 Green</option>
-                                            <option value="yellow">🟡 Yellow</option>
-                                            <option value="red">🔴 Red</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr style="background: #f8f9fa;">
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Deliverable 6">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Original criteria">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="What was delivered">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
-                                        <select style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;">
-                                            <option value="">-</option>
-                                            <option value="green">🟢 Green</option>
-                                            <option value="yellow">🟡 Yellow</option>
-                                            <option value="red">🔴 Red</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 3. Change Log -->
-                <div class="form-section">
-                    <h4>3. Change Log</h4>
-                    <p style="color: #666; margin-bottom: 15px;">Summary of all scope changes made during the project.</p>
-
-                    <div style="overflow-x: auto; margin-top: 20px;">
-                        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                            <thead style="background: #c0392b; color: white;">
-                                <tr>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 10%;">Change No</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 15%;">Change Date</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 40%;">Change</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 35%;">Reason for Change</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="1">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="mm/dd/yy">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Describe the change">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Why was this change needed?">
-                                    </td>
-                                </tr>
-                                <tr style="background: #f8f9fa;">
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="2">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="mm/dd/yy">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Describe the change">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Why was this change needed?">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="3">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="mm/dd/yy">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Describe the change">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Why was this change needed?">
-                                    </td>
-                                </tr>
-                                <tr style="background: #f8f9fa;">
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="4">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="mm/dd/yy">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Describe the change">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px; background: transparent;" placeholder="Why was this change needed?">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="5">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="mm/dd/yy">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Describe the change">
-                                    </td>
-                                    <td style="padding: 10px; border: 1px solid #ddd;">
-                                        <input type="text" style="width: 100%; border: none; font-size: 14px; padding: 5px;" placeholder="Why was this change needed?">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 4. Performance Analysis -->
-                <div class="form-section">
-                    <h4>4. Performance Analysis</h4>
-
-                    <h5 style="color: var(--color-primary); margin: 20px 0 10px 0;">4.1 Budget Performance</h5>
-                    <textarea rows="4" placeholder="If applicable: Did you stay within budget constraints? Any unexpected costs for tools, hosting, or resources?"></textarea>
-
-                    <h5 style="color: var(--color-primary); margin: 20px 0 10px 0;">4.2 Schedule Performance</h5>
-                    <textarea rows="4" placeholder="Did you meet your semester milestones? What caused delays? Were your time estimates realistic for this project?"></textarea>
-                </div>
-
-                <!-- 5. Stakeholder Management -->
-                <div class="form-section">
-                    <h4>5. Stakeholder Management</h4>
-                    <textarea rows="5" placeholder="How did you engage with potential users, the instructor, or other stakeholders? What feedback was most valuable? How effective was your communication strategy?"></textarea>
-                </div>
-
-                <!-- 6. Risk and Issue Summary -->
-                <div class="form-section">
-                    <h4>6. Risk and Issue Summary</h4>
-                    <p style="color: #666; margin-bottom: 15px;">Major risks that occurred, how they were handled, and any outstanding risks for operations.</p>
-                    <textarea rows="6" placeholder="Document the key risks and issues that materialized during your project:
-• What risks from your risk register actually happened?
-• What unexpected issues came up?
-• How did you handle them?
-• Are there any outstanding risks or issues that need to be monitored going forward?"></textarea>
-                </div>
-
-                <!-- 7. What Went Well -->
-                <div class="form-section">
-                    <h4>7. What Went Well?</h4>
-                    <label>Successes and Best Practices:</label>
-                    <textarea rows="6" placeholder="What worked exceptionally well? What practices should be repeated in future projects?
-
-Examples:
-• Weekly team check-ins kept everyone on track and motivated
-• Using a shared project management tool (Trello/Asana) improved visibility
-• Breaking the project into sprints helped manage the workload across the semester
-• Getting early feedback from potential users shaped better features"></textarea>
-                </div>
-
-                <!-- 8. What Didn't Go Well -->
-                <div class="form-section">
-                    <h4>8. What Didn't Go Well?</h4>
-                    <label>Challenges and Problems:</label>
-                    <textarea rows="6" placeholder="What caused difficulties? What should be avoided or improved?
-
-Examples:
-• Balancing coursework with project deadlines created time pressure
-• Initial scope was too ambitious for the semester timeline
-• Team members had conflicting schedules for meetings
-• Underestimated the time needed for documentation and testing"></textarea>
-                </div>
-
-                <!-- 9. What Would You Do Differently -->
-                <div class="form-section">
-                    <h4>9. What Would You Do Differently?</h4>
-                    <label>Improvements and Recommendations:</label>
-                    <textarea rows="6" placeholder="If starting over, what would you change? What concrete recommendations do you have?
-
-Examples:
-• Start with a smaller MVP and add features incrementally
-• Set clearer team expectations and meeting schedules in week 1
-• Create a realistic timeline with buffer time for unexpected issues
-• Document decisions and rationale as we go instead of at the end"></textarea>
-                </div>
-
-                <!-- 10. Lessons Learned Register -->
-                <div class="form-section">
-                    <h4>10. Lessons Learned Register</h4>
-                    <p style="color: #666; margin-bottom: 15px;">
-                        Document at least five lessons learned throughout your project lifecycle. Use the table format below to capture each lesson.
-                    </p>
-
-                    <div style="overflow-x: auto; margin-top: 20px;">
-                        <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                            <thead style="background: #c0392b; color: white;">
-                                <tr>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 10%;">Date</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 15%;">SDLC Stage</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 25%;">What was the problem?</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 25%;">What was the consequence?</th>
-                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd; width: 25%;">Lesson Learned Advice</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">mm/dd/yy</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Initiation / Planning / Execution / Monitoring / Closing</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Describe the problem or challenge encountered</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">What happened as a result?</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">What advice would you give to avoid or handle this in the future?</td>
-                                </tr>
-                                <tr style="background: #f8f9fa;">
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">mm/dd/yy</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">SDLC Stage</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Problem description</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Consequence</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Advice nugget</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">mm/dd/yy</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">SDLC Stage</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Problem description</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Consequence</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Advice nugget</td>
-                                </tr>
-                                <tr style="background: #f8f9fa;">
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">mm/dd/yy</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">SDLC Stage</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Problem description</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Consequence</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Advice nugget</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">mm/dd/yy</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">SDLC Stage</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Problem description</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Consequence</td>
-                                    <td style="padding: 10px; border: 1px solid #ddd; color: #666; font-size: 14px;">Advice nugget</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- 11. Key Takeaways -->
-                <div class="form-section">
-                    <h4>11. Key Takeaways for Future Projects</h4>
-                    <label>Top 3-5 Actionable Insights:</label>
-                    <textarea rows="5" placeholder="What are the most important lessons you learned that you'd apply to your next project?
-
-Be specific and actionable:
-1. Start with a realistic scope—our initial plan was too ambitious for one semester
-2. Schedule regular team sync meetings at the same time each week for consistency
-3. Build in buffer time for learning new tools and technologies
-4. Get user feedback early and often, not just at the end
-5. Document major decisions when they happen—it's harder to remember the 'why' later"></textarea>
-                </div>
-
-                <!-- 12. Formal Sign-Off -->
-                <div class="form-section">
-                    <h4>12. Formal Sign-Off</h4>
-                    <label>Get feedback and sign-off from stakeholders confirming project completion and their satisfaction with the outcome.</label>
-                    <textarea rows="6" placeholder="Document stakeholder feedback and approval:
-• Your name and signature as PM
-• Team members who approve the final deliverables
-• Stakeholder feedback: Were they happy with the outcome? What were their impressions?
-• Stakeholder sign-off confirming they are satisfied with the deliverables
-• Instructor/course approval (if applicable)
-
-Example: 'Spoke with [Stakeholder Name] on [Date] - they were pleased with [specific outcome] and confirmed the project met their expectations. They signed off on [Date].'"></textarea>
-                </div>
-
-                <!-- 13. Recognition -->
-                <div class="form-section">
-                    <h4>13. Recognition</h4>
-                    <label>Acknowledgment of team members' contributions and key stakeholder support.</label>
-                    <textarea rows="5" placeholder="Thank the people who helped make your project successful:
-• Team members and their specific contributions
-• People you interviewed or who provided feedback
-• Classmates who offered advice or support"></textarea>
-                </div>
-
-                <!-- 14. What's Next -->
-                <div class="form-section">
-                    <h4>14. What's Next</h4>
-                    <label>Future plans, next steps, and how you'll apply what you learned.</label>
-                    <textarea rows="5" placeholder="What are your next steps after this project?
-• How will you apply the lessons learned to your next project or career?
-• Are there any follow-up actions or future enhancements planned?
-• What skills or knowledge do you want to develop further?
-• How has this project changed your approach to project management?"></textarea>
-                </div>
-            </div>
-        </main>
+    <div class="header">
+        <h1>📄 Project Closure Document</h1>
+        <p>Final summary of outcomes, learning, and future recommendations.</p>
     </div>
+
+    <div class="content">
+
+        <!-- SECTION 1 ------------------------------------------------------------>
+        <h2 class="section-title">1. Project Information</h2>
+
+        <h3>Project Title</h3>
+        <p class="placeholder">[Insert project title here]</p>
+
+        <h3>Project Manager</h3>
+        <p class="placeholder">[Insert your name]</p>
+
+        <h3>Project Description</h3>
+        <p class="placeholder">[Describe what the project was, who it served, and main goals]</p>
+
+        <h3>Closure Type</h3>
+        <p class="placeholder">[Normal / Premature / Perpetual / Failed / Changed Priority]</p>
+
+        <h3>Closing Summary</h3>
+        <p class="placeholder">[High-level summary of the project outcome and performance]</p>
+
+        <!-- SECTION 2 ------------------------------------------------------------>
+        <h2 class="section-title">2. Deliverables Summary</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Deliverable Name</th>
+                <th>Original Definition of Done</th>
+                <th>Actual Result</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>[Deliverable 1]</td>
+                <td>[Original criteria]</td>
+                <td>[What was completed]</td>
+                <td>[Green / Yellow / Red]</td>
+            </tr>
+            <tr>
+                <td>[Deliverable 2]</td>
+                <td>[Original criteria]</td>
+                <td>[What was completed]</td>
+                <td>[Status]</td>
+            </tr>
+            <tr>
+                <td>[Deliverable 3]</td>
+                <td>[Original criteria]</td>
+                <td>[What was completed]</td>
+                <td>[Status]</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- SECTION 3 ------------------------------------------------------------>
+        <h2 class="section-title">3. Change Log</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Change #</th>
+                <th>Date</th>
+                <th>Description of Change</th>
+                <th>Reason</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>[MM/DD/YY]</td>
+                <td>[Describe change]</td>
+                <td>[Why change was needed]</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>[MM/DD/YY]</td>
+                <td>[Describe change]</td>
+                <td>[Reason for change]</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- SECTION 4 ------------------------------------------------------------>
+        <h2 class="section-title">4. Performance Analysis</h2>
+
+        <h3>4.1 Budget Performance</h3>
+        <p class="placeholder">[Description of budget performance]</p>
+
+        <h3>4.2 Schedule Performance</h3>
+        <p class="placeholder">[Description of timeline performance]</p>
+
+        <!-- SECTION 5 ------------------------------------------------------------>
+        <h2 class="section-title">5. Stakeholder Management</h2>
+        <p class="placeholder">[Describe stakeholder engagement and communication]</p>
+
+        <!-- SECTION 6 ------------------------------------------------------------>
+        <h2 class="section-title">6. Risk and Issue Summary</h2>
+        <p class="placeholder">[Document risks that occurred, how they were handled, outstanding issues]</p>
+
+        <!-- SECTION 7 ------------------------------------------------------------>
+        <h2 class="section-title">7. What Went Well?</h2>
+        <p class="placeholder">[Successes and best practices]</p>
+
+        <!-- SECTION 8 ------------------------------------------------------------>
+        <h2 class="section-title">8. What Didn’t Go Well?</h2>
+        <p class="placeholder">[Challenges and failures]</p>
+
+        <!-- SECTION 9 ------------------------------------------------------------>
+        <h2 class="section-title">9. What Would You Do Differently?</h2>
+        <p class="placeholder">[Recommendations and improvements]</p>
+
+        <!-- SECTION 10 ----------------------------------------------------------->
+        <h2 class="section-title">10. Lessons Learned Register</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>SDLC Stage</th>
+                <th>Problem</th>
+                <th>Consequence</th>
+                <th>Lesson Learned</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>[MM/DD]</td>
+                <td>[Stage]</td>
+                <td>[Problem]</td>
+                <td>[Outcome]</td>
+                <td>[Advice]</td>
+            </tr>
+            <tr>
+                <td>[MM/DD]</td>
+                <td>[Stage]</td>
+                <td>[Problem]</td>
+                <td>[Outcome]</td>
+                <td>[Advice]</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- SECTION 11 ----------------------------------------------------------->
+        <h2 class="section-title">11. Key Takeaways</h2>
+        <p class="placeholder">[Top actionable lessons to apply in future projects]</p>
+
+        <!-- SECTION 12 ----------------------------------------------------------->
+        <h2 class="section-title">12. Formal Sign-Off</h2>
+        <p class="placeholder">[Stakeholder approval summary]</p>
+
+        <!-- SECTION 13 ----------------------------------------------------------->
+        <h2 class="section-title">13. Recognition</h2>
+        <p class="placeholder">[Thank contributors and stakeholders]</p>
+
+        <!-- SECTION 14 ----------------------------------------------------------->
+        <h2 class="section-title">14. What's Next?</h2>
+        <p class="placeholder">[Future steps, enhancements, career application]</p>
+
+    </div>
+</div>
 </body>
 </html>
